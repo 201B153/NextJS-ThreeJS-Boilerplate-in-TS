@@ -3,18 +3,18 @@ import dynamic from 'next/dynamic';
 import Head from 'next/head';
 
 
-const LitterWitch = dynamic(() => import('../components/LitterWitch'), {
+const Model_3D = dynamic(() => import('../components'), {
   ssr: false,
-  loading: () => <div>loading...</div>,
+  loading: () => <div>loading✋✋✋</div>,
 });
 
 const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Nextjs-3js-template</title>
+        <title>Next-Three-Boilerplate</title>
       </Head>
-      <LitterWitch />
+      <Model_3D />
     </div>
   );
 };

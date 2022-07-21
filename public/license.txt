@@ -1,0 +1,11 @@
+Model Information:
+* title:	Toon Outlined Material Test
+* source:	https://sketchfab.com/3d-models/toon-outlined-material-test-1760d6da4c674c309098f1360ca12735
+* author:	Rocco Giandomenico (https://sketchfab.com/Rocco.Giandomenico)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Toon Outlined Material Test" (https://sketchfab.com/3d-models/toon-outlined-material-test-1760d6da4c674c309098f1360ca12735) by Rocco Giandomenico (https://sketchfab.com/Rocco.Giandomenico) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

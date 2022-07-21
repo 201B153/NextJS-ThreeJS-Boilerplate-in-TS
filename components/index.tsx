@@ -1,10 +1,10 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-import { loadGLTFModel } from '../../lib/model';
+import { loadGLTFModel } from '../lib/model';
 import { BodyModel, Container, Footer, Header } from './styles';
 
-const LitterWitch: React.FC = () => {
+const Model_3D: React.FC = () => {
   const refBody = useRef<HTMLDivElement>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [renderer, setRenderer] = useState<any>();
@@ -47,7 +47,7 @@ const LitterWitch: React.FC = () => {
       setRenderer(renderer);
 
       const scale = scH * 0.08 + 4;
-      const camera = new THREE.OrthographicCamera(-scale, scale, scale, -scale / 2, 0.01, 50000);
+      const camera = new THREE.OrthographicCamera(-scale, scale, scale, -scale / 2, 1, 50000);
       camera.position.copy(initialCameraPosition);
       camera.lookAt(target);
       setCamera(camera);
@@ -55,12 +55,14 @@ const LitterWitch: React.FC = () => {
       const ambientLight = new THREE.AmbientLight(0xcccccc, 1);
       scene.add(ambientLight);
 
+
+      // You can stabliss orbital controll from here
       const controls = new OrbitControls(camera, renderer.domElement);
       controls.autoRotate = true;
       controls.target = target;
       setControls(controls);
 
-      loadGLTFModel(scene, '/little-witch/scene.gltf', {
+      loadGLTFModel(scene, '/Model_3D/scene.gltf', {
         receiveShadow: false,
         castShadow: false,
       }).then(() => {
@@ -109,21 +111,14 @@ const LitterWitch: React.FC = () => {
     <Container>
       <Header>
         <h1>
-          Heading
+          BoilerPlate
         </h1>
       </Header>
-      
-        body-||-dependecies and other things     
-      
-      <BodyModel ref={refBody}>{loading && <p>loading...</p>}</BodyModel>
-         3-d model is background fixed
-      <Footer>
-        <Footer>
-          Footer
-        </Footer>
-      </Footer>
+       
+      <BodyModel ref={refBody}>{loading && <p>loading✋✋✋</p>}</BodyModel>
+    
     </Container>
   );
 };
 
-export default LitterWitch;
+export default Model_3D;

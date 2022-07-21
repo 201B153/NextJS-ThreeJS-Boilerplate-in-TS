@@ -7,7 +7,7 @@ const Container = styled.div`
 
   color: #fff;
   text-align: center;
-  background-image: url('./bg.jpg');
+  background-color: #000000;
   background-position: center;
 `;
 
